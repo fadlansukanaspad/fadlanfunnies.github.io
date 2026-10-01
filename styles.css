@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Lucida Console', 'Monaco', 'Courier New'
+}
+header {
+    background-color: rgb(200, 192, 160);
+    text-align: center;
+    padding: 5px;
+}
+
+/* navigation */
+li {
+    padding: 5px;
+    word-wrap: break-word;
+}
+li a:hover {
+    background-color: black;
+    color: white;
+}
+.albums {
+    float: left;
+    width:20%;
+}
+article article {
+    float: right;
+    width: 80%;
+    padding: 5px;
+}
+article article P {
+    text-align: justify;
+}
+nav {
+    float:left;
+    background-color: rgb(160, 200, 192);
+    width: 30%;
+    /* height: 200px; */
+    padding: 5px
+}
+nav li {
+    list-style-type: none;
+    padding: 5px;    
+}
+li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*article styles*/
+ol {
+    width:67%;
+    padding-right: 10px;
+    float: left;
+}
+section{
+    display: flex;
+}
+article {
+    background-color: rgb(192, 160, 200);
+    float: left;
+    padding: 8px ;
+    width: 70%;
+    /* height: 200px; */
+}
+.section {
+    float: right;
+    padding: 8px;
+    width: 100%;
+    /* height: 200px; */
+}
+footer {
+    background-color: rgb(200, 192, 160);
+    padding: 10px;
+    text-align: center;
+}
+img {
+    float: right;
+    height: 200px;
+    padding: 7px;
+}
+.menu {
+    width: 200px;
+    text-decoration: none;
+    background-color: rgb(255, 80, 32);
+    color: rgb(255, 80, 32);
+}
+/*layout responsiveness*/
+
+@media (max-width:600px) {
+ul {
+list-style-type:none;
+margin: 0px;
+padding: 0px;
+overflow: hidden;
+}
+.albums li {
+    display: inline-block;
+}
+ul li {
+    display: inline-block;
+}
+li a {
+    display: block;
+    text-align: center;
+    padding: 3px 5px;
+    text-decoration: none;
+    overflow: ellipsis;
+}
+.menu {
+    display: grid;
+    margin: 5px;
+    width: 50%;
+}
+img {
+    height: 135px;
+}
+header{
+    background-color: rgb(200, 240, 160);
+    width: 100%
+}
+section {
+    width: 100%;
+    display: table;
+}
+footer {
+    background-color: rgb(200, 240, 160);
+    width: 100%
+}
+.albums {
+    width: 100%;
+    display: table;
+}
+nav {
+    background-color: rgb(160, 200, 240);
+    width: 100%;
+    word-wrap: break-word;
+}
+article {
+    background-color: rgb(240, 160, 200);
+    padding: 12px;
+    width: 100%
+}
+article article {
+    width: 100%;
+}
+}
